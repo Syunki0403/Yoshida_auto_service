@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+    <script src="../../common/js/script.js"></script>
+    <title>ヨシダオートサービス｜ご意見・ご感想</title>
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/template.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <a class="menu_btn">
+            <span class="menu_btn_line btnline-top"></span>
+            <span class="menu_btn_line btnline-center"></span>
+            <span class="menu_btn_line btnline-bottom"></span>
+        </a>
+        <nav class="menu_nav">
+            <p class="menu_nav_logo">
+                <img src="../../common/img/footer_logo.png" alt="ヨシダオートサービス">
+            </p>
+            <ul class="menu_nav_list">
+                <li>
+                    <a href="../../index.html">
+                        <img src="../../common/img/menu_nav1.png" alt="ホーム">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../news/index.html">
+                        <img src="../../common/img/menu_nav2.png" alt="ニュース">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../greeting/index.html">
+                        <img src="../../common/img/menu_nav3.png" alt="代表挨拶">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../outline/index.html">
+                        <img src="../../common/img/menu_nav4.png" alt="企業情報">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../branding/index.html">
+                        <img src="../../common/img/menu_nav5.png" alt="事業紹介">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../recruit/index.html">
+                        <img src="../../common/img/menu_nav6.png" alt="採用情報">
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <img src="../../common/img/menu_nav7.png" alt="問い合わせ">
+                    </a>
+                </li>
+            </ul>
+            <div class="menu_nav_sns">
+                <div class="sns_instagram">
+                    <a href="https://www.instagram.com/keinomori/"></a>
+                </div>
+                <div class="sns_facebook">
+                    <a href="https://www.facebook.com/yosidaauto/"></a>
+                </div>
+            </div>
+            <div class="menu_nav_policy">
+                <a href="../../privacy-policy/index.html">プライバシーポリシー</a>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="title">
+            <h2 class="">問い合わせ</h2>
+            <div class="diagonal-line">
+                <span>Contact</span>
+            </div>
+        </div>
+        <p class="main_text">ヨシダオートサービスへのお問い合わせ</p>
+        <form action="#">
+            <div class="main_contact">
+                <label for="name">ご氏名<span>&nbsp;&nbsp;(必須)</span></label>
+                <input id="name" type="text" placeholder="例：吉田太郎" required>
+            </div>
+            <div class="main_contact">
+                <label for="hurigana">ふりがな<span>&nbsp;&nbsp;(必須)</span></label>
+                <input id="hurigana" type="text" placeholder="例：よしだたろう" required>
+            </div>
+            <div class="main_contact contact_post">
+                <label for="post">郵便番号</label>
+                <div class="post_research">
+                    <input id="post" type="text" placeholder="例：1234567" maxlength="7" name="post">
+                    <p>
+                        <a class="js-post-research" href="">&#12306;住所自動入力</a>
+                    </p>
+                </div>
+            </div>
+            <div class="main_contact">
+                <label for="pref">都道府県</label>
+                <input id="pref" type="text" name="pref" placeholder="例：東京都">
+            </div>
+            <div class="main_contact">
+                <label for="addr1">市町村区</label>
+                <input id="addr1" type="text" name="addr1" placeholder="例：品川区芝浦">
+            </div>
+            <div class="main_contact">
+                <label for="addr2">番地以下の住所</label>
+                <input id="addr2" type="text" name="addr2" placeholder="例：2-2-2 ○×マンション501号室">
+            </div>
+            <div class="main_contact contact_reply">
+                <label>返信方法<span>&nbsp;&nbsp;(必須)</span></label>
+                <div class="checkboxes">
+                    <div class="chkbox">
+                        <input type="checkbox" id="chkbox1" name="reply" value="1" />
+                        <label for="chkbox1">電話</label>
+                    </div>
+                    <div class="chkbox">
+                        <input type="checkbox" id="chkbox2" name="reply" value="2" />
+                        <label for="chkbox2">メール</label>
+                    </div>
+                    <div class="chkbox">
+                        <input type="checkbox" id="chkbox3" name="reply" value="3" />
+                        <label for="chkbox3">携帯電話</label>
+                    </div>
+                    <div class="chkbox">
+                        <input type="checkbox" id="chkbox4" name="reply" value="4" />
+                        <label for="chkbox4">FAX</label>
+                    </div>
+                </div>
+                <div class="select-hour">
+                    <p class="select-hour_text">連絡時間帯</p>
+                    <select name="before-hour">
+                        <option></option>
+                        <option value="ten">10:00</option>
+                        <option value="twelve">12:00</option>
+                        <option value="fourteen">14:00</option>
+                        <option value="sixteen">16:00</option>
+                        <option value="eighteen">18:00</option>
+                        <option value="tyenty">20:00</option>
+                    </select>
+                    <p class="select-hour_tilde">～</p>
+                    <select name="after-hour">
+                        <option></option>
+                        <option value="twelve">12:00</option>
+                        <option value="fourteen">14:00</option>
+                        <option value="sixteen">16:00</option>
+                        <option value="eighteen">18:00</option>
+                        <option value="tyenty">20:00</option>
+                        <option value="tyenty-one">21:00</option>
+                    </select>
+                </div>
+            </div>
+            <div class="main_contact">
+                <label for="mail-addr">メールアドレス<span>&nbsp;&nbsp;(必須)</span></label>
+                <input id="mail-addr" type="text" placeholder="例：sample@sample.com" required>
+            </div>
+            <div class="main_contact contact-phone">
+                <label for="phone">電話番号<span>&nbsp;&nbsp;(必須)</span></label>
+                <input id="phone" type="text" placeholder="例：03-0000-0000">
+            </div>
+            <div class="main_contact contact-mobile">
+                <label for="mobile">携帯電話<span>&nbsp;&nbsp;(必須)</span></label>
+                <input id="mobile" type="text" placeholder="例：090-0000-0000">
+            </div>
+            <div class="main_contact contact-fax">
+                <label for="fax">FAX<span>&nbsp;&nbsp;(必須)</span></label>
+                <input id="fax" type="text" placeholder="例：03-0000-0000">
+            </div>
+            <div class="main_contact">
+                <label for="work">ご職業</label>
+                <input id="work" type="text" placeholder="例：自動車販売員">
+            </div>
+            <div class="main_contact">
+                <label for="car">現在お乗りのお車</label>
+                <input id="car" type="text" placeholder="例：フォルクスワーゲン（クロスボロ）">
+            </div>
+            <div class="main_contact contact-content">
+                <label for="content">お問い合わせ内容</label>
+                <textarea id="content" cols="30" rows="10"></textarea>
+            </div>
+        </form>
+        <div class="privacy">
+            <input type="checkbox" id="privacy" name="privacy" />
+            <label for="privacy"></label>
+            <div class="privacy_text">
+                <a href="#">プライバシーポリシー</a>を確認し、個人情報の取扱に同意します。
+            </div>
+        </div>
+        <div class="confirmation_btn">
+            <a href="#">
+                <span>確認</span>
+            </a>
+        </div>
+        <div class="back-btn">
+            <a href="../index.html">
+                <img src="../../common/img/back_btn.png" alt="BACK">
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p class="footer_logo">
+            <img src="../../common/img/footer_logo.png" alt="ヨシダオートサービス">
+        </p>
+        <nav>
+            <ul class="footer_nav">
+                <li>
+                    <a href="../../index.html">
+                        <img src="../../common/img/footer_home.png" alt="ホーム">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../news/index.html">
+                        <img src="../../common/img/footer_news.png" alt="ニュース">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../greeting/index.html">
+                        <img src="../../common/img/footer_greeting.png" alt="代表挨拶">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../outline/index.html">
+                        <img src="../../common/img/footer_outline.png" alt="企業情報">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../branding/index.html">
+                        <img src="../../common/img/footer_branding.png" alt="事業紹介">
+                    </a>
+                </li>
+                <li>
+                    <a href="../../recruit/index.html">
+                        <img src="../../common/img/footer_recruit.png" alt="採用情報">
+                    </a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <img src="../../common/img/footer_contact.png" alt="問い合わせ">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer_sns">
+            <div class="sns_instagram">
+                <a href="https://www.instagram.com/keinomori/"></a>
+            </div>
+            <div class="sns_facebook">
+                <a href="https://www.facebook.com/yosidaauto/"></a>
+            </div>
+        </div>
+        <div class="footer_policy">
+            <a href="../../privacy-policy/index.html">プライバシーポリシー</a>
+        </div>
+        <p class="footer_copyright">&copy;YOSHIDA AUTO SERVICE All Rights Reserved.</p>
+        <div class="footer_movetop">
+            <a href="#" class="js-movetop">
+                <div></div>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

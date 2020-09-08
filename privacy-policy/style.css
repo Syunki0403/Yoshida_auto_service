@@ -1,0 +1,20 @@
+main {
+  padding: 0 5vw;
+  margin-bottom: 100px;
+}
+
+main h1 {
+  margin: 80px 0 30px;
+  font-size: 30px;
+}
+
+main dt {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+main dd {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=style.css.map */

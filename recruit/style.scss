@@ -1,0 +1,388 @@
+@charset 'utf-8';
+
+//  エントリーボタン
+
+.entry-btn {
+    position: fixed;
+    top: 30vh;
+    right: -30px;
+    width: 110px;
+    height: 60px;
+    background-color: #ea5514;
+    border-radius: 30px;
+    z-index: 5;
+    p {
+        position: absolute;
+        top: 12px;
+        left: 16px;
+        color: white;
+    }
+    p::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 20px;
+        border-top: 1.5px solid white;
+        top: 30px;
+        left: 15px;
+    }
+    p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        border-right: 1.5px solid white;
+        border-bottom: 1.5px solid white;
+        transform: rotate(-45deg);
+        top: 26px;
+        left: 33px;
+    }
+    span {
+        background: rgba(234, 85, 20, 0.2);
+        position: absolute;
+        border-radius: 30px;
+        width: 110px;
+        height: 60px;
+        top: 0px;
+        left: 0px;
+        animation: pulsate 1s ease-out;
+        animation-iteration-count: infinite;
+    }
+}
+@keyframes pulsate {
+    0% {
+        transform: scale(1.1, 1.1);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.5, 1.7);
+        opacity: 0;
+    }
+}
+
+// メイン
+
+main {
+    position: relative;
+    width: 100%;
+    border-top: 10px solid #ea5514;
+}
+
+.main_logo {
+    position: absolute;
+    top: -10px;
+    img {
+        width: 80%;
+    }
+}
+
+// 仕事内容
+
+.recruit {
+    padding: 14vh 7vw 0;
+}
+
+.recruit_nav {
+    margin-bottom: 40px;
+    h2 {
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
+    }
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        li {
+            width: 31%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.department {
+    margin-bottom: 70px;
+    h3 {
+        width: 100%;
+        height: 80%;
+        img {
+            width: 100%;
+            height: 80%;
+        }
+    }
+    &_members {
+        position: relative;
+        height: 300px;
+        .member {
+            position: absolute;
+            filter: sepia(50%);
+        }
+    }
+}
+
+.member_comments {
+    font-size: 3.5vw;
+    dt {
+        position: relative;
+        padding: 20px 0 20px 10px;
+        background-color: #ea5514;
+        color: white;
+        margin-bottom: 10px;
+    }
+    dt::before {
+        position: absolute;
+        top: 0;
+        left: 5px;
+        content: "";
+        width: 2px;
+        height: 100%;
+        background-color: white;
+    }
+    dd {
+        display: none;
+        margin-bottom: 25px;
+    }
+}
+
+.recruit_sales {
+    .menber-1 {
+        width: 45vw;
+        top: 90px;
+    }
+    .menber-2 {
+        width: 55vw;
+        top: 10px;
+        right: 0;
+    }
+    .menber-3 {
+        width: 35vw;
+        top: 170px;
+        right: 20px;
+    }
+}
+
+.recruit_mechanic {
+    .menber-1 {
+        width: 30vw;
+        top: 30px;
+        right: 0;
+    }
+    .menber-2 {
+        width: 50vw;
+        top: 10px;
+    }
+    .menber-3 {
+        width: 40vw;
+        top: 150px;
+        right: 30px;
+    }
+}
+
+.recruit_front {
+    .menber-1 {
+        width: 33vw;
+        top: 50px;
+    }
+    .menber-2 {
+        width: 50vw;
+        top: 10px;
+        right: 0;
+    }
+    .menber-3 {
+        width: 40vw;
+        top: 150px;
+        left: 50px;
+    }
+}
+
+.recruit_customer {
+    .menber-1 {
+        width: 50vw;
+        top: 10px;
+    }
+    .menber-2 {
+        width: 30vw;
+        top: 30px;
+        right: 0;
+    }
+    .menber-3 {
+        width: 45vw;
+        top: 130px;
+        right: 0;
+    }
+}
+
+.recruit_management {
+    .menber-1 {
+        width: 30vw;
+        top: 50px;
+    }
+    .menber-2 {
+        width: 50vw;
+        top: 10px;
+        right: 0;
+    }
+    .menber-3 {
+        width: 40vw;
+        top: 140px;
+        left: 40px;
+    }
+}
+
+.recruit_insurance {
+    .menber-1 {
+        width: 60vw;
+        top: 10px;
+    }
+    .menber-2 {
+        width: 40vw;
+        top: 140px;
+        right: 0;
+    }
+}
+
+// 働き方
+
+.working {
+    padding: 0 7vw;
+    margin-bottom: 80px;
+    h2 {
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
+    }
+    .working_movie {
+        position: relative;
+    }
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+    .frame-TL {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: -7px;
+        left: -7px;
+        border-top: 1px solid #ea5514;
+        border-left: 1px solid #ea5514;
+    }
+    .frame-TR {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: -7px;
+        right: -7px;
+        border-top: 1px solid #ea5514;
+        border-right: 1px solid #ea5514;
+    }
+    .frame-BL {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        bottom: -7px;
+        left: -7px;
+        border-bottom: 1px solid #ea5514;
+        border-left: 1px solid #ea5514;
+    }
+    .frame-BR {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        bottom: -7px;
+        right: -7px;
+        border-bottom: 1px solid #ea5514;
+        border-right: 1px solid #ea5514;
+    }
+}
+
+//  採用情報
+
+.careers {
+    padding: 0 7vw;
+    margin-bottom: 80px;
+    h2 {
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+        }
+    }
+    &_list {
+        border: 1px dotted black;
+        font-size: 13px;
+        dt {
+            padding: 2vw 5vw;
+            background-color: #ea5514;
+            color: white;
+        }
+        dt:nth-of-type(2n) {
+            background-color: #ed7133;
+        }
+        dd {
+            padding: 2vw 5vw;
+        }
+    }
+}
+
+//  応募
+
+.entry {
+    padding: 0 7vw;
+    margin-bottom: 60px;
+    h2 {
+        margin-bottom: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    &_text {
+        font-size: 3.5vw;
+    }
+    &_phone {
+        font-size: 13px;
+        a {
+            display: inline;
+            color: #ea5514;
+        }
+    }
+    &_mynabi {
+        margin: 20px 10vw;
+        img {
+            width: 100%;
+        }
+    }
+    &_rikunabi {
+        margin: 0 10vw;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.back-btn {
+    margin-bottom: 5vh;
+    padding: 0 7vw;
+    img {
+        width: 100%;
+    }
+}
+
+.foot-logo {
+    text-align: right;
+    img {
+        width: 80%;
+        vertical-align: bottom;
+    }
+}

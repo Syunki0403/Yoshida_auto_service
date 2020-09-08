@@ -1,0 +1,473 @@
+@charset 'utf-8';
+
+// ヘッダー
+
+.header_contents {
+    position: relative;
+}
+
+.header_contents_images {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            object-fit: cover;
+        }
+    }
+    
+}
+
+.header_contents_title {
+    padding: 0 5%;
+    position: absolute;
+    top: 40%;
+    img {
+        width: 95%;
+    }
+}
+
+.header_contents_logo {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    img {
+        vertical-align: bottom;
+    }
+}
+
+.header_space {
+    height: 40px;
+    &_arrow {
+        margin: 20px auto 0;
+        width: 15px;
+        height: 15px;
+        border: 3px solid;
+        border-color:  transparent transparent black black;
+        transform: rotate(-45deg);
+    }
+}
+
+// メイン
+// 新着情報
+
+.main-content {
+    border-top: 3px solid #ea5514;
+    position: relative;
+    height: 800px;
+    &_title {
+        margin: 20px 0 15px;
+        img {
+            width: 40%;
+        }
+    }
+}
+
+.news {
+    &_list {
+        padding: 0 7vw;
+    }
+    &_shop {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        img {
+            vertical-align: bottom;
+            width: 80%;
+            filter: sepia(50%);
+        }
+    }
+    &_imgText {
+        text-align: right;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        img {
+            vertical-align: bottom;
+            width: 50%;
+        }
+    }
+    .main-content_title {
+        text-align: center;
+    }
+}
+
+.news_list_item {
+    border-bottom: 1px dotted;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    time {
+        font-size: 12px;
+    }
+    dl {
+        font-size: 13px;
+        font-feature-settings: "palt";
+        dt {
+            display: inline-block;
+            padding: 0 5px;
+            color: #fff;
+            background: #ea5514;
+        }
+        dd {
+            padding-top: 10px;
+        }
+    }
+    p {
+        text-align: right;
+        span {
+            display: inline-block;
+            position: relative;
+            padding-left: 40px;
+            font-size: 3.5vw;
+            transition: all .3s linear;
+            color: #ea5514;;
+        }
+        span::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 15px;
+            border-top: 1.5px solid #ea5514;
+            top: 48%;
+            left: 0;
+        }
+        span::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-bottom: 1.2px solid #ea5514;
+            border-right: 1.2px solid #ea5514;
+            transform: rotate(-45deg);
+            top: 0;
+            left: 15px;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+    a:hover {
+        span {
+            transform: translate(6px);
+        }
+    }
+}
+
+.main-content_wrap {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    img {
+        height: 800px;
+        width: 100%;
+    }
+}
+
+.news_btn {
+    margin-top: 40px;
+}
+
+.main-content_btn {
+    text-align: center;
+    a::before {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: #ea5514;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: all .5s cubic-bezier(.645,.045,.355,1);
+    }
+    a {
+        position: relative;
+        padding: 5px 60px;
+        display: inline-block;
+        border: 1px solid #000;
+        overflow: hidden;
+        span {
+            display: inline-block;
+            padding-right: 40px;
+            position: relative;
+            vertical-align: baseline;
+            font-size: 3.5vw;
+            transition: all .4s linear;
+        }
+        span::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            transition: all .5s;
+            width: 15px;
+            border-top: 1px solid #000;
+            top: 50%;
+            right: 10px;
+        }
+        span::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            transition: all .5s;
+            width: 7px;
+            height: 7px;
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+            transform: rotate(-45deg);
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+    a:hover {
+        color: #fff;
+        border-color: #ea5514;
+        transition: border .9s cubic-bezier(0.65, 0.05, 0.36, 1);
+        span {
+            transform: translate(6px);
+        }
+        span::before {
+            border-color: #fff;
+        }
+        span::after {
+            border-color: #fff;
+        }
+    }
+    a:hover::before {
+        left: 0;
+    }
+}
+
+// 代表挨拶
+
+.greeting {
+    &_btn {
+        margin-top: 30px;
+    }
+    &_president {
+        img {
+            width: 90%;
+        }
+    }
+    &_backcolor-pink {
+        width: 200px;
+        height: 680px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f8dcc3;
+        z-index: -1;
+    }
+}
+
+.greeting_content {
+    padding: 0 7vw;
+    .main-content_title {
+        img {
+            width: 50%;
+        }
+    }
+    p {
+        font-size: 13px;
+    }
+}
+
+.main-content_title {
+    text-align: left;
+}
+
+.greeting_imgText {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    img {
+        vertical-align: bottom;
+        width: 70%;
+    }
+}
+
+
+
+// 企業情報
+
+.outline {
+    .main-content_title {
+        margin-top: 40px;
+    }
+    table {
+        padding: 0 7vw;
+        text-align: left;
+        font-size: 12px;
+        th {
+            vertical-align: top;
+        }
+        td {
+            padding-left: 15px;
+            padding-bottom: 5px;
+        }
+    }
+    .main-content_title {
+        text-align: center;
+    }
+    &_backcolor-pink {
+        width: 330px;
+        height: 300px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #f8dcc3;
+        z-index: -1;
+    }
+}
+
+.outline_shop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    img {
+        width: 65%;
+        vertical-align: bottom;
+        filter: sepia(50%);
+    }
+}
+
+.outline_imgText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    img {
+        width: 70%;
+        vertical-align: bottom;
+    }
+}
+
+.outline_btn {
+    margin-top: 30px;
+}
+
+// 事業紹介
+
+.branding {
+    &_shop {
+        text-align: right;
+        img {
+            width: 90%;
+            filter: sepia(50%);
+        }
+    }
+    &_imgText {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: right;
+        img {
+            width: 80%;
+            vertical-align: bottom;
+        }
+    }
+    &_btn {
+        text-align: left;
+        padding: 0 7vw;
+    }
+    &_backcolor-pink {
+        width: 290px;
+        height: 700px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #f8dcc3;
+        z-index: -1;
+    }
+}
+
+.branding_contents {
+    padding: 0 7vw;
+    .main-content_title {
+        margin-top: 40px;
+        img {
+            width: 50%;
+        }
+    }
+    &_shop {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        div {
+            width: 135px;
+        }
+        p {
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+}
+
+// 採用情報
+
+.recruit {
+    &_shop {
+        text-align: right;
+        img {
+            width: 85%;
+            filter: sepia(50%);
+        }
+    }
+    &_btn {
+        margin-top: 30px;
+    }
+    &_backcolor-pink {
+        width: 290px;
+        height: 750px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #f8dcc3;
+        z-index: -1;
+    }
+}
+
+.recruit_contents {
+    padding: 0 7vw;
+    margin-bottom: 20px;
+    p {
+        font-size: 13px;
+    }
+    img {
+        width: 50%;
+    }
+}
+
+.recruit_industry {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8vw;
+    margin-bottom: 5px;
+    img {
+        width: 25vw;
+    }
+}
+
+.recruit_imgText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: right;
+    img {
+        width: 75%;
+        vertical-align: bottom;
+    }
+}

@@ -1,0 +1,327 @@
+header {
+  position: relative;
+  width: 100%;
+  border-top: 10px solid #ea5514;
+}
+
+header::before {
+  content: '';
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f8dcc3;
+  z-index: -1;
+}
+
+.header_logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header_logo img {
+  width: 75%;
+}
+
+.header_contents {
+  margin: 8vh 10vw 7vh;
+  background-color: #ea5514;
+}
+
+.header_contents_logo {
+  text-align: center;
+  padding-top: 2.5vh;
+}
+
+.header_contents_logo img {
+  width: 40%;
+}
+
+.header_contents_btn {
+  text-align: center;
+  padding: 5px 0 8px;
+}
+
+.header_contents_btn a::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.header_contents_btn a {
+  position: relative;
+  padding: 5px 60px;
+  display: inline-block;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.header_contents_btn a span {
+  color: white;
+  display: inline-block;
+  position: relative;
+  vertical-align: baseline;
+  font-size: 3.5vw;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.header_contents_btn a:hover {
+  border-color: white;
+  -webkit-transition: border 0.9s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: border 0.9s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.header_contents_btn a:hover span {
+  -webkit-transform: translate(6px);
+          transform: translate(6px);
+  color: #ea5514;
+}
+
+.header_contents_btn a:hover::before {
+  left: 0;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 15vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 0 10vw;
+}
+
+.modal_title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.modal_title img {
+  width: 60%;
+}
+
+.modal_closebtn img {
+  width: 8%;
+  position: absolute;
+  top: 33px;
+  right: 13px;
+}
+
+.modal_logo {
+  text-align: center;
+  margin: 40px 0 30px;
+}
+
+.modal_logo img {
+  width: 60%;
+}
+
+.modal_text {
+  margin: 0 10vw;
+  color: #ea5514;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.modal_text:last-child {
+  margin-bottom: 30px;
+}
+
+.corporate {
+  padding: 0 7vw;
+}
+
+.corporate h2 {
+  margin-bottom: 1vh;
+}
+
+.corporate h2 img {
+  width: 100%;
+}
+
+.corporate table {
+  font-size: 0.85em;
+}
+
+.corporate th {
+  width: 28%;
+  text-align: left;
+  padding-bottom: 5px;
+  vertical-align: top;
+}
+
+.corporate td {
+  padding-bottom: 5px;
+}
+
+table a {
+  text-decoration: underline;
+}
+
+.table-blank th, .table-blank td {
+  padding-top: 13px;
+}
+
+.table-blank div {
+  margin-bottom: 13px;
+}
+
+.movie {
+  margin: 40px 0 60px;
+}
+
+.history {
+  padding: 0 7vw;
+  margin-bottom: 50px;
+}
+
+.history h2 {
+  margin-bottom: 1vh;
+}
+
+.history h2 img {
+  width: 100%;
+}
+
+.history_text {
+  font-size: 0.82em;
+  margin: 20px 0 30px;
+}
+
+.history table {
+  padding-bottom: 13px;
+}
+
+.history th {
+  font-size: 4vw;
+  vertical-align: top;
+  position: relative;
+  color: #ea5514;
+  top: -2px;
+}
+
+.history th::after {
+  content: '';
+  width: 5px;
+  margin: 0 auto;
+  background-color: black;
+  position: absolute;
+  top: 5.9vw;
+  left: 53%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.history td {
+  font-size: 3.5vw;
+  vertical-align: top;
+  padding-bottom: 3px;
+}
+
+.history .table-month {
+  width: 10vw;
+  text-align: right;
+}
+
+.history .table-sub {
+  padding-left: 1vw;
+}
+
+.history .table1 th::after {
+  height: 21vw;
+}
+
+.history .table2 th::after {
+  height: 4vw;
+}
+
+.history .table3 th::after {
+  height: 9vw;
+}
+
+.history .table4 th::after {
+  height: 15vw;
+}
+
+.history .table5 th::after {
+  height: 15vw;
+}
+
+.history .table6 th::after {
+  height: 9vw;
+}
+
+.history .table7 th::after {
+  height: 9vw;
+}
+
+.history .table8 th::after {
+  height: 9vw;
+}
+
+.history .table9 th::after {
+  height: 26vw;
+}
+
+.history .table10 th::after {
+  height: 36vw;
+}
+
+.organization {
+  position: relative;
+  padding: 0 7vw;
+  margin-bottom: 10vh;
+}
+
+.organization h2 {
+  margin-bottom: 1vh;
+}
+
+.organization h2 img {
+  width: 100%;
+}
+
+.organization div {
+  margin-top: 8vh;
+}
+
+.organization div img {
+  width: 100%;
+}
+
+.backcolor-pink-2 {
+  width: 100vw;
+  height: 250px;
+  position: absolute;
+  top: 2vh;
+  left: 0;
+  background-color: #f8dcc3;
+  z-index: -1;
+}
+
+.back-btn {
+  margin-bottom: 5vh;
+  padding: 0 7vw;
+}
+
+.back-btn img {
+  width: 100%;
+}
+
+.foot-logo {
+  text-align: right;
+}
+
+.foot-logo img {
+  width: 100%;
+  vertical-align: bottom;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,314 @@
+@charset 'utf-8';
+
+// ヘッダー
+
+header {
+    position: relative;
+    width: 100%;
+    border-top: 10px solid #ea5514;
+}
+
+header::before {
+    content: '';
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f8dcc3;
+    z-index: -1;
+}
+
+.header_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    img {
+        width: 75%;
+    }
+}
+
+.header_contents {
+    margin: 8vh 10vw 7vh;
+    background-color: #ea5514;
+    &_logo {
+        text-align: center;
+        padding-top: 2.5vh;
+        img {
+            width: 40%;
+        }
+    }
+}
+
+.header_contents_btn {
+    text-align: center;
+    padding: 5px 0 8px;
+    a::before {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: all .5s cubic-bezier(.645,.045,.355,1);
+    }
+    a {
+        position: relative;
+        padding: 5px 60px;
+        display: inline-block;
+        border: 1px solid white;
+        overflow: hidden;
+        span {
+            color: white;
+            display: inline-block;
+            position: relative;
+            vertical-align: baseline;
+            font-size: 3.5vw;
+            transition: all .4s linear;
+        }
+    }
+    a:hover {
+        border-color: white;
+        transition: border .9s cubic-bezier(0.65, 0.05, 0.36, 1);
+        span {
+            transform: translate(6px);
+            color: #ea5514;
+        }
+    }
+    a:hover::before {
+        left: 0;
+    }
+}
+
+// モーダル
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 15vh;
+    background-color:rgba(255,255,255,0.95);
+    margin: 0 10vw;
+    &_title {
+        margin-top: 30px;
+        text-align: center;
+        img {
+            width: 60%;
+        }
+    }
+    &_closebtn {
+        img {
+            width: 8%;
+            position: absolute;
+            top: 33px;
+            right: 13px;
+        }
+    }
+    &_logo {
+        text-align: center;
+        margin: 40px 0 30px;
+        img {
+            width: 60%;
+        }
+    }
+    &_text {
+        margin: 0 10vw;
+        color: #ea5514;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+    &_text:last-child {
+        margin-bottom: 30px;
+    }
+}
+
+// メイン
+
+// 企業情報
+
+.corporate {
+    padding: 0 7vw;
+    h2 {
+        margin-bottom: 1vh;
+        img {
+            width: 100%;
+        }
+    }
+    table {
+        font-size: 0.85em;
+    }
+    th {
+        width: 28%;
+        text-align: left;
+        padding-bottom: 5px;
+        vertical-align: top;
+    }
+    td {
+        padding-bottom: 5px;
+    }
+}
+
+table {
+    a {
+        text-decoration: underline;
+    }
+}
+
+.table-blank {
+    th,td {
+        padding-top: 13px;
+    }
+    div {
+        margin-bottom: 13px;
+    }
+}
+
+.movie {
+    margin: 40px 0 60px;
+}
+
+// 沿革
+
+.history {
+    padding: 0 7vw;
+    margin-bottom: 50px;
+    h2 {
+        margin-bottom: 1vh;
+        img {
+            width: 100%;
+        }
+    }
+    &_text {
+        font-size: 0.82em;
+        margin: 20px 0 30px;
+    }
+    table {
+        padding-bottom: 13px;
+    }
+    th {
+        font-size: 4vw;
+        vertical-align: top;
+        position: relative;
+        color: #ea5514;
+        top: -2px;
+    }
+    th::after {
+        content: '';
+        width: 5px;
+        margin: 0 auto;
+        background-color: black;
+        position: absolute;
+        top: 5.9vw;
+        left: 53%;
+        transform: translateX(-50%);
+    }
+    td {
+        font-size: 3.5vw;
+        vertical-align: top;
+        padding-bottom: 3px;
+    }
+    .table-month {
+        width: 10vw;
+        text-align: right;
+    }
+    .table-sub {
+        padding-left: 1vw;
+    }
+    .table1 {
+        th::after {
+            height: 21vw;
+        }
+    }
+    .table2 {
+        th::after {
+            height: 4vw;
+        }
+    }
+    .table3 {
+        th::after {
+            height: 9vw;
+        }
+    }
+    .table4 {
+        th::after {
+            height: 15vw;
+        }
+    }
+    .table5 {
+        th::after {
+            height: 15vw;
+        }
+    }
+    .table6 {
+        th::after {
+            height: 9vw;
+        }
+    }
+    .table7 {
+        th::after {
+            height: 9vw;
+        }
+    }
+    .table8 {
+        th::after {
+            height: 9vw;
+        }
+    }
+    .table9 {
+        th::after {
+            height: 26vw;
+        }
+    }
+    .table10 {
+        th::after {
+            height: 36vw;
+        }
+    }
+}
+
+// 組織図
+
+.organization {
+    position: relative;
+    padding: 0 7vw;
+    margin-bottom: 10vh;
+    h2 {
+        margin-bottom: 1vh;
+        img {
+            width: 100%;
+        }
+    }
+    div {
+        margin-top: 8vh;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.backcolor-pink-2 {
+    width: 100vw;
+    height: 250px;
+    position: absolute;
+    top: 2vh;
+    left: 0;
+    background-color: #f8dcc3;
+    z-index: -1;
+}
+
+.back-btn {
+    margin-bottom: 5vh;
+    padding: 0 7vw;
+    img {
+        width: 100%;
+    }
+}
+
+.foot-logo {
+    text-align: right;
+    img {
+        width: 100%;
+        vertical-align: bottom;
+    }
+}
